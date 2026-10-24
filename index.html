@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tiny Local Tools</title>
 <meta name="description" content="One tiny local-only tool a week. Free, runs in your browser, no uploads.">
@@ -19,6 +20,8 @@
   ul { padding-left: 20px; }
   li { margin: 8px 0; }
   a { color: #0b66c3; }
+  .meta { font-size: 14px; color: #555; }
+  code { font-size: 12px; word-break: break-all; background: #f3f5f8; padding: 2px 4px; border-radius: 4px; }
   footer { margin-top: 40px; font-size: 14px; color: #777; }
 </style>
 </head>
@@ -29,8 +32,23 @@
 
 <h2>Tools</h2>
 <ul>
-  <li>PDF merger (coming this week)</li>
+  <li>
+    <a href="merge-pdf.html">PDF Merger</a> - combine PDFs, reorder and remove files, all in your browser.
+    <div class="meta">
+      Library: pdf-lib 1.17.1 (MIT)<br>
+      SHA-256: <code>8dcdc688e5e315e765e8e165203333f28491ad28414a9ff33dc4e267dcc512e8</code><br>
+      <a href="https://www.virustotal.com/gui/file/8dcdc688e5e315e765e8e165203333f28491ad28414a9ff33dc4e267dcc512e8">VirusTotal report</a>
+    </div>
+  </li>
 </ul>
+
+<h2>For IT teams</h2>
+<p class="meta">
+  This tool runs entirely in your browser. It makes no network requests (enforced by a Content-Security-Policy), has no accounts or telemetry, and processes files locally.
+  Library: pdf-lib 1.17.1 (MIT). SHA-256: <code>8dcdc688e5e315e765e8e165203333f28491ad28414a9ff33dc4e267dcc512e8</code>.
+  Source: <a href="https://github.com/trenatics/trenatics.github.io">github.com/trenatics/trenatics.github.io</a>.
+  Report issues: <a href="https://x.com/trenatics">@trenatics</a> on X.
+</p>
 
 <footer>
   <p>Building in public on X: <a href="https://x.com/trenatics">@trenatics</a></p>
